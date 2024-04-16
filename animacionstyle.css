@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animación en CSS</title>
+<style>
+  /* Estilo del cuadro */
+  .cuadro {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    position: relative;
+    animation: mover 2s infinite alternate; /* La animación dura 2 segundos y se repite infinitamente en sentido alterno */
+  }
+
+  /* Definición de la animación */
+  @keyframes mover {
+    0% {
+      left: 0; /* El cuadro comienza en la posición izquierda (0px) */
+    }
+    100% {
+      left: calc(100% - 100px); /* Se desplaza hasta el extremo derecho */
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="cuadro"></div>
+
+</body>
+</html>
+
